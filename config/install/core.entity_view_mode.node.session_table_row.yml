@@ -1,0 +1,10 @@
+uuid: 25d4b353-c98b-4f99-b0d5-0be5b6439620
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.session_table_row
+label: 'Session Table Row'
+targetEntityType: node
+cache: true

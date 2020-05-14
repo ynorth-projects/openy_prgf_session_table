@@ -1,0 +1,35 @@
+uuid: 0ab5bb4b-9c7d-4efa-b6c4-b55af5061bf7
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.openy_prgf_session_table.field_business_name
+    - field.field.paragraph.openy_prgf_session_table.field_session_list
+    - paragraphs.paragraphs_type.openy_prgf_session_table
+id: paragraph.openy_prgf_session_table.default
+targetEntityType: paragraph
+bundle: openy_prgf_session_table
+mode: default
+content:
+  field_business_name:
+    weight: 0
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_session_list:
+    weight: 1
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
+hidden:
+  created: true
+  status: true
+  uid: true

@@ -1,0 +1,34 @@
+uuid: 9dd33694-ab1c-4172-bcc5-332dbfc63eef
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_session_list
+    - node.type.session
+    - paragraphs.paragraphs_type.openy_prgf_session_table
+  module:
+    - datalayer
+third_party_settings:
+  datalayer:
+    expose: 0
+    label: field_session_list
+id: paragraph.openy_prgf_session_table.field_session_list
+field_name: field_session_list
+entity_type: paragraph
+bundle: openy_prgf_session_table
+label: 'Session node'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      session: session
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

@@ -1,0 +1,9 @@
+uuid: 2927db4c-95bc-4c44-ae91-94003971349b
+langcode: en
+status: true
+dependencies: {  }
+id: openy_prgf_session_table
+label: 'Session Table'
+icon_uuid: null
+description: ''
+behavior_plugins: {  }

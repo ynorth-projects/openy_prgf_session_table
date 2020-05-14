@@ -1,0 +1,16 @@
+name: Open Y Paragraph Session Table
+description: 'Implements a paragraph session table.'
+type: module
+core: 8.x
+package: Open Y
+version: 8.x-1.0
+dependencies:
+  - block_content
+  - datalayer
+  - entity_browser_entity_form
+  - field
+  - inline_entity_form
+  - language
+  - openy_block_custom_simple
+  - openy_prgf
+  - paragraphs

@@ -1,0 +1,25 @@
+uuid: 9cda99fe-b412-46a6-be84-1d7ada5d2df5
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.openy_prgf_session_table.field_business_name
+    - field.field.paragraph.openy_prgf_session_table.field_session_list
+    - paragraphs.paragraphs_type.openy_prgf_session_table
+id: paragraph.openy_prgf_session_table.default
+targetEntityType: paragraph
+bundle: openy_prgf_session_table
+mode: default
+content:
+  field_session_list:
+    weight: 0
+    label: hidden
+    settings:
+      view_mode: session_table_row
+      link: false
+    third_party_settings: {  }
+    type: entity_reference_entity_view
+    region: content
+hidden:
+  field_business_name: true
+  search_api_excerpt: true

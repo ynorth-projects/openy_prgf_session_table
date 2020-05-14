@@ -1,0 +1,25 @@
+uuid: 9008a8f9-c043-41b8-85f4-bcce1b1eb66b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_business_name
+    - paragraphs.paragraphs_type.openy_prgf_session_table
+  module:
+    - datalayer
+third_party_settings:
+  datalayer:
+    expose: 0
+    label: field_business_name
+id: paragraph.openy_prgf_session_table.field_business_name
+field_name: field_business_name
+entity_type: paragraph
+bundle: openy_prgf_session_table
+label: 'Business name'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string
