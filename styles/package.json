@@ -1,0 +1,14 @@
+{
+  "name": "SecondaryDescriptionSidebarCSS",
+  "version": "1.0.0",
+  "main": "sass/style.scss",
+  "license": "MIT",
+  "dependencies": {},
+  "devDependencies": {
+    "node-sass": "^4.12.0",
+    "nodemon": "^1.19.1"
+  },
+  "scripts": {
+    "build": "node-sass --output-style compressed --output css sass/"
+  }
+}

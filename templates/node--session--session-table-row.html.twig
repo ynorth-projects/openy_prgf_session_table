@@ -82,18 +82,22 @@
 %}
 <article{{ attributes.addClass(classes) }}>
   <div{{ content_attributes.addClass('node__content') }}>
-    <div class="row">
-      <div class="col-sm-3">
-          {{ content.field_session_class[0]['#title'] }}
-        <p>
-          {{ content.field_session_description[0] }}
-        </p>
-      </div>
-      <div class="col-sm-3">
-        {{ content.field_session_time[0] }}
-      </div>
-      <div class="col-sm-3">
-        {{ content.field_session_reg_link }}
+    <div class="container">
+      <div class="row table-row">
+        <div class="col-sm-4">
+          <h5 class="class-name">
+            {{ content.field_session_class[0]['#title'] }}
+          </h5>
+          <p>
+            {{ content.field_session_description[0] }}
+          </p>
+        </div>
+        <div class="col-sm-4">
+          {{ content.field_session_time }}
+        </div>
+        <div class="col-sm-4">
+          {{ content.field_session_reg_link }}
+        </div>
       </div>
     </div>
   </div>

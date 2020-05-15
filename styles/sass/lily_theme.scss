@@ -1,0 +1,25 @@
+.class-name {
+  font-weight: bold;
+  color: #01a490;
+}
+
+.table-row {
+  border-top: 1px solid #ddd;
+  padding: 10px 0;
+  .label-for-field-session-reg-link,
+  .label-for-field-session-time,
+  .label-for-field-session-time-date,
+  .wrapper-field-session-time-days {
+    display: none;
+  }
+
+  .field-session-reg-link {
+    font-weight: bold;
+    margin-top: 30px;
+  }
+  .field-session-time-date {
+    color: #0060af;
+    font-weight: bold;
+    margin-top: 30px;
+  }
+}
