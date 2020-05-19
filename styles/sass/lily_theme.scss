@@ -14,12 +14,28 @@
   }
 
   .field-session-reg-link {
-    font-weight: bold;
-    margin-top: 30px;
+    padding: 10px 0;
+    display: block;
+    @media (max-width: 767px) {
+      padding: 20px 0;
+      text-align: center;
+    }
+    a {
+      border: 1px solid transparent;
+      border-radius: 4px;
+      background-color: #9c1f7b;
+      background-image: linear-gradient(#b92f9e,rgba(171,36,144,0));
+      padding: 6px 12px;
+      color: #fffffc;
+    }
   }
   .field-session-time-date {
     color: #0060af;
     font-weight: bold;
     margin-top: 30px;
+  }
+  .date-session {
+    color: #0060af;
+    font-weight: bold;
   }
 }

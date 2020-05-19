@@ -15,8 +15,25 @@ function openy_prgf_session_table_theme() {
  * Implements hook_preprocess_HOOK().
  */
 function openy_prgf_session_table_preprocess_node(&$vars) {
+  $node = $vars['node'];
+  $node_type = $node->getType();
   if ($vars['view_mode'] == 'session_table_row') {
     $vars['theme_hook_suggestions'][] = 'node__session__session_table_row';
+    if ($node_type == 'session' && !empty($node)) {
+      foreach ($node->get('field_session_time')->referencedEntities() as $item) {
+        $times = $item->get('field_session_time_date')->getValue();
+        $date_start = $times[0]['value'];
+        $time_custom = strtotime($date_start . ' UTC');
+        $time_start = date("h:i A", $time_custom);
+
+        $date_end = $times[0]['end_value'];
+        $time_custom = strtotime($date_end . ' UTC');
+        $time_end = date("h:i A", $time_custom);
+
+        $vars['time_start'] = $time_start;
+        $vars['time_end'] = $time_end;
+      }
+    }
   }
 }
 
