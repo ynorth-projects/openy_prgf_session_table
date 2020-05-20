@@ -38,4 +38,11 @@
     color: #0060af;
     font-weight: bold;
   }
+  @media (min-width: 767px) {
+    .date-session,
+    .time-session,
+    .field-session-reg-link {
+      margin-top: 30px;
+    }
+  }
 }
