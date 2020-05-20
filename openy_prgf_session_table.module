@@ -30,8 +30,11 @@ function openy_prgf_session_table_preprocess_node(&$vars) {
         $time_custom = strtotime($date_end . ' UTC');
         $time_end = date("h:i A", $time_custom);
 
+        $date_start = date("l, F d, Y", $time_custom);
+
         $vars['time_start'] = $time_start;
         $vars['time_end'] = $time_end;
+        $vars['date_start'] = $date_start;
       }
     }
   }
