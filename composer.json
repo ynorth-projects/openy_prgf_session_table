@@ -1,0 +1,10 @@
+{
+  "name": "ynorth-projects/openy_prgf_session_table",
+  "description": "Implements a paragraph session table.",
+  "type": "drupal-module",
+  "require": {
+    "ymcatwincities/yn": "*"
+  },
+  "license": "GPL-2.0+",
+  "minimum-stability": "dev"
+}
