@@ -3,7 +3,7 @@
   "description": "Implements a paragraph session table.",
   "type": "drupal-module",
   "require": {
-    "ymcatwincities/yn": "*"
+    "ymcatwincities/openy": "*"
   },
   "license": "GPL-2.0+",
   "minimum-stability": "dev"
