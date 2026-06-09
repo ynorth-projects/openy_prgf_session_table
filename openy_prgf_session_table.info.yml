@@ -13,4 +13,4 @@ dependencies:
   - openy_block_custom_simple
   - openy_prgf
   - paragraphs
-core_version_requirement: ^9.5 || ^10
+core_version_requirement: ^10 || ^11
