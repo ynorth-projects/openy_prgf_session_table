@@ -6,11 +6,10 @@ version: 8.x-1.0
 dependencies:
   - block_content
   - datalayer
-  - entity_browser_entity_form
   - field
   - inline_entity_form
   - language
   - openy_block_custom_simple
   - openy_prgf
   - paragraphs
-core_version_requirement: ^9.5 || ^10
+core_version_requirement: ^10 || ^11
